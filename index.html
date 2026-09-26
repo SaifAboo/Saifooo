@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YOUR STORE</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="intro-page">
+  <main class="intro" id="intro">
+    <div class="intro-content">
+      <img src="logo.png" class="intro-logo" alt="Store logo">
+
+      <button class="enter-button" id="enterButton">
+        ENTER
+      </button>
+    </div>
+
+    <div class="social-icons">
+      <a href="https://instagram.com/your_username" target="_blank">
+        Instagram
+      </a>
+
+      <a href="https://tiktok.com/@your_username" target="_blank">
+        TikTok
+      </a>
+
+      <a href="https://wa.me/000000000000" target="_blank">
+        WhatsApp
+      </a>
+    </div>
+  </main>
+
+  <script>
+    document.getElementById("enterButton").addEventListener("click", () => {
+      document.getElementById("intro").classList.add("page-exit");
+
+      setTimeout(() => {
+        window.location.href = "shop.html";
+      }, 700);
+    });
+  </script>
+</body>
+</html>
